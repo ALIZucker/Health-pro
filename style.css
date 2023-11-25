@@ -1,0 +1,87 @@
+#property2, #input-bmi > input, #bot-bmi > input {
+  width: 15vw;
+  height: 5vh;
+  font-size: 1vw;
+  border-radius: 16px;
+  box-shadow: 1px 1px 2px 2px #b7b6b6; }
+
+#property1, #input-bmi article:first-child, #second-lable {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: darkblue; }
+
+#box-bmi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+#box-bmi > div {
+  width: 40%;
+  height: 100vh; }
+
+#sectionone {
+  text-align: center;
+  margin-top: 8vh;
+  height: 30vh; }
+
+#logo-bmi {
+  display: block;
+  margin-left: 15vw; }
+
+#text-bmi, #logo-bmi {
+  width: 10vw; }
+
+#input-bmi {
+  text-align: center;
+  margin-top: 12vh; }
+
+#input-bmi article {
+  text-align: start; }
+
+#input-bmi article:first-child {
+  margin-left: 3vw; }
+
+#second-lable {
+  margin-left: 15vw; }
+
+#input-bmi > input {
+  padding: 0 1vw;
+  margin-left: 1vw;
+  margin-top: 1vh; }
+
+#bot-bmi {
+  text-align: center;
+  margin-top: 8vh; }
+
+#bot-bmi > input:hover {
+  background-color: darkblue;
+  color: aliceblue; }
+
+#show-reasult {
+  display: none; }
+
+#bot-bmi > input {
+  color: darkblue;
+  border: 2px darkblue solid;
+  background-color: transparent; }
+
+#mainimage {
+  width: 50%;
+  background-size: cover; }
+
+#mainimage img {
+  width: 59.5vw;
+  height: 99.2vh; }
+
+#vol {
+  width: 25vw;
+  height: 7vh;
+  margin-left: 4vw;
+  background-color: yellow; }
+
+/*# sourceMappingURL=style.css.map */
