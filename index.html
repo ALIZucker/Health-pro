@@ -22,14 +22,15 @@
             <input type="number" placeholder="cm" name="height" required id="height-input" min="30" max="300" autofocus>
             <input type="number" placeholder="kg" name="weight" required id="weght-input" min="1" max="200">
             <section id="bot-bmi">
-                <input type="submit" onclick="BMI()" value="start your change now">
+                <input type="button" onclick="BMI()" value="start your change now">
 
             </section>
         </form>
         <div id="show-reasult">
             <form>
-                <label for="vol">Volume (between 0 and 50):</label>
+
                 <br>
+                <p id="lable-show"></p>
                 <input type="range" id="vol" name="vol" min="0" max="50">
             </form>
         </div>

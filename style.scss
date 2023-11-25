@@ -93,9 +93,11 @@ body {
   background-color: $blue-dark;
   color: aliceblue;
 }
-#show-reasult{
+
+#show-reasult {
   display: none;
 }
+
 #bot-bmi > input {
 
   @extend #property2;
@@ -115,8 +117,8 @@ body {
   height: 99.2vh;
 }
 
-#vol{
-  width: 30vw;
-  height: 7vh;
+#vol {
+  width: 25vw;
+  height: 7vh; margin-left: 4vw;
   background-color: yellow;
 }
