@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="assets/sass/style.scss">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div style="display: flex; flex-direction: row; justify-content: flex-start;">
-    <div style="width: 45%; background-color: cadetblue; text-align: center;height: auto;">
-        <section>
-            <img src="assets/img/LOGOHE-removebg-preview.png">
-            <img src="assets/img/cooltext447898491289990.png">
+<div id="box-bmi">
+    <div>
+        <section id="sectionone">
+            <img src="assets/img/LOGOHE-removebg-preview.png" id="logo-bmi">
+            <img src="assets/img/cooltext447898491289990.png" id="text-bmi">
             <h1></h1>
         </section>
-        <section>
-            <label for="height-input"></label>
-            <input type="number" placeholder="cm" required id="height-input" autofocus>
-            <label for="weght-input"></label>
-            <input type="number" placeholder="kg" required id="weght-input">
-        </section>
-        <button>start your change now</button>
-    </div>
-    <div>
+        <form id="input-bmi">
+            <article>
+                <label for="height-input">height</label>
+                <label id="second-lable" for="weght-input">weight</label>
+            </article>
+            <input type="number" placeholder="cm" name="height" required id="height-input" min="30" max="300" autofocus>
+            <input type="number" placeholder="kg" name="weight" required id="weght-input" min="1" max="200">
+            <section id="bot-bmi">
+                <input type="submit" onclick="BMI()" value="start your change now">
+
+            </section>
+        </form>
+        <div id="show-reasult">
+            <form>
+                <label for="vol">Volume (between 0 and 50):</label>
+                <br>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+            </form>
+        </div>
 
     </div>
+    <div id="mainimage">
+        <img
+                src="assets/img/shdgxsxsefgxfcxdddcccscsd-1673530998.jpg">
+    </div>
 </div>
+
+<script src="assets/js/health.js"></script>
 </body>
+
 </html>

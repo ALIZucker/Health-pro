@@ -1,0 +1,122 @@
+$blue-dark: darkblue;
+
+
+@mixin section-box($value1,$value2) {
+  text-align: $value1;
+  margin-top: $value2;
+}
+
+#property2 {
+  width: 15vw;
+  height: 5vh;
+  font-size: 1vw;
+  border-radius: 16px;
+  box-shadow: 1px 1px 2px 2px #b7b6b6;
+}
+
+#property1 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: $blue-dark;
+}
+
+#box-bmi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#box-bmi > div {
+  width: 40%;
+  height: 100vh;
+}
+
+#sectionone {
+  @include section-box(center, 8vh);
+  height: 30vh;
+}
+
+#logo-bmi {
+  display: block;
+  margin-left: 15vw;
+  @extend #text-bmi
+}
+
+#text-bmi {
+  width: 10vw;
+}
+
+#input-bmi {
+  @include section-box(center, 12vh);
+
+}
+
+#input-bmi article {
+  text-align: start
+}
+
+#input-bmi article:first-child {
+  margin-left: 3vw;
+  @extend #property1;
+}
+
+#second-lable {
+  margin-left: 15vw;
+  @extend #property1;
+}
+
+#input-bmi > input {
+  @extend #property2;
+  padding: 0 1vw;
+  margin-left: 1vw;
+
+  margin-top: 1vh;
+
+}
+
+#input-bmi section input {
+
+}
+
+#bot-bmi {
+  @include section-box(center, 8vh)
+
+}
+
+#bot-bmi > input:hover {
+  background-color: $blue-dark;
+  color: aliceblue;
+}
+#show-reasult{
+  display: none;
+}
+#bot-bmi > input {
+
+  @extend #property2;
+  color: $blue-dark;
+  border: 2px $blue-dark solid;
+  background-color: transparent;
+
+}
+
+#mainimage {
+  width: 50%;
+  background-size: cover;
+}
+
+#mainimage img {
+  width: 59.5vw;
+  height: 99.2vh;
+}
+
+#vol{
+  width: 30vw;
+  height: 7vh;
+  background-color: yellow;
+}
